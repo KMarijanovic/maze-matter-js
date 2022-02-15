@@ -1,0 +1,42 @@
+body {
+	margin: 0;
+	/*removing the default 8px margin*/
+}
+
+.hidden {
+	display: none !important;
+	/*very important to stay hidden until won*/
+}
+
+h1 {
+	color: white;
+	font-size: 60px;
+}
+
+button {
+	color: white;
+	font-size: 30px;
+	background: none;
+	border-color: white;
+	border-style: dotted;
+	border-radius: 5px;
+}
+
+button:hover {
+	color: yellow;
+}
+
+.winner {
+	/*making sure it's flexible to any screen*/
+	display: flex;
+	/*displaying in the center*/
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	/*staying in the top of the maze*/
+	position: absolute;
+	z-index: 1;
+	/*streching in the full size of the screen*/
+	height: 100vh;
+	width: 100vw;
+}
